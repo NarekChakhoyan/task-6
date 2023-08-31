@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        select {
+            width: 180px;
+            height: 30px;
+        }
+
+        input {
+            width: 200px;
+            height: 24px;
+            color: blueviolet;
+        }
+
+        #message {
+            height: 30px;
+        }
+
+        .divStyle {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            border: 2px dotted grey;
+            margin-top: 10px;
+            padding: 5px 0;
+        }
+
+        .spanStyle {
+            padding-right: 5px;
+            display: inline-block;
+            font-size: 30px;
+            color: darkviolet;
+        }
+    </style>
+</head>
+<body>
+<div id="result">
+    <form name="form">
+        <label for="region">Region</label>
+        <select name="regions" id="region">
+            <option>-select-</option>
+            <option value="Արագածոտն">Արագածոտն</option>
+            <option value="Արարատ">Արարատ</option>
+            <option value="Արմավիր">Արմավիր</option>
+            <option value="Գեղարքունիք">Գեղարքունիք</option>
+            <option value="Կոտայք">Կոտայք</option>
+            <option value="Լոռի">Լոռի</option>
+            <option value="Շիրակ">Շիրակ</option>
+            <option value="Սյունիք">Սյունիք</option>
+            <option value="Տավուշ">Տավուշ</option>
+            <option value="Վայոց ձոր">Վայոց ձոր</option>
+        </select>
+        <label for="cities">City</label>
+        <select name="cities" id="cities">
+            <option hidden="">-select-</option>
+        </select>
+        <input id="name" type="text" placeholder="Name">
+        <input id="surname" type="text" placeholder="Surname">
+        <input type="submit" placeholder="Send Message" id="message">
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!--const select = document.getElementById("region");-->
+<!--const selectCity = document.getElementById("cities");-->
+<!--//let cityOption;-->
+<!--select.addEventListener("change", function () {-->
+<!--selectCity.innerHTML = '';-->
+<!--if (select.value) {-->
+<!--const region = locations.find((location) => location.region === select.value)-->
+<!--if (region) {-->
+<!--region.cities.forEach((city) => {-->
+<!--selectCity.options.add(new Option(city, city))-->
+<!--})-->
+<!--}-->
+<!--}-->
+<!--});-->
+
+<!--//hin-->
+<!--// const select = document.getElementById("region");-->
+<!--// const selectCity = document.getElementById("cities");-->
+<!--// let cityOption;-->
+<!--// select.addEventListener("change", function () {-->
+<!--//     selectCity.innerHTML = '';-->
+<!--//     if (select.value) {-->
+<!--//         const region = locations.find((location)=>location.region===select.value)-->
+<!--//         if(region){-->
+<!--//             region.cities.map((city)=>{-->
+<!--//                 return new Option(city,city)-->
+<!--//             })-->
+<!--//         }-->
+<!--//         // locations.forEach(location => {-->
+<!--//         //     if (location.region === select.value) {-->
+<!--//         //         location.cities.forEach(city => {-->
+<!--//         //             cityOption = document.createElement("option");-->
+<!--//         //             cityOption.textContent = `${city}`;-->
+<!--//         //             selectCity.append(cityOption);-->
+<!--//         //         })-->
+<!--//         //     }-->
+<!--//         // })-->
+<!--//     }-->
+<!--//});-->
